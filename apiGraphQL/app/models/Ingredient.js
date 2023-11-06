@@ -24,4 +24,6 @@ Ingredient.init(
         modelName: "Ingredient",
         tableName: "ingredient",
     }
-    )
+);
+
+module.exports = Ingredient;

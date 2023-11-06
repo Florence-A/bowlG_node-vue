@@ -24,4 +24,6 @@ FoodGroup.init(
         modelName: "FoodGroup",
         tableName: "food_group",
     }
-    )
+);
+
+module.exports = FoodGroup;

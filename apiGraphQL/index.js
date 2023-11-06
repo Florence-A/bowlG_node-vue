@@ -1,4 +1,4 @@
-require ("dotenv").config;
+require("dotenv").config();
 
 // Import the different modules needed to start the server.
 const { ApolloServer } = require("@apollo/server");
@@ -13,7 +13,7 @@ const server = new ApolloServer({
     resolvers
 });
 
-
+  
 (async () => {
 // Start the server as a standalone server.
 const { url } = await startStandaloneServer(server);

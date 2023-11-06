@@ -8,18 +8,18 @@ Ingredient.belongsTo(FoodGroup, {
   as: "food_group"
 });
 
-FoodGroup.hasMany(Ingredient, {
+FoodGroup.belongsToMany(Ingredient, {
   foreignKey: "food_group_id",
   as: "ingredients"
 });
 
-Ingredient.hasMany(Diet, {
+Ingredient.belongsToMany(Diet, {
     through: "ingredient_has_diets",
     foreign_key: "diet_id",
     onDelete: "CASCADE"
 });
 
-Diet.hasMany(Ingredient, {
+Diet.belongsToMany(Ingredient, {
     through: "ingredient_has_diets",
     foreign_key: "ingredient_id",
     onDelete: "CASCADE"    

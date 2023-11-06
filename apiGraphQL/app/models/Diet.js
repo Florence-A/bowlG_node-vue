@@ -24,4 +24,6 @@ Diet.init(
         modelName: "Diet",
         tableName: "diet",
     }
-    )
+);
+
+module.exports = Diet;
