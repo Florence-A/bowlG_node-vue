@@ -1,0 +1,5 @@
+type Diet {
+    id: Int!
+    label: String!
+    ingredients: [Ingredient!]!
+}

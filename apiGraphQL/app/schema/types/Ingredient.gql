@@ -1,0 +1,6 @@
+type Ingredient {
+    id: Int!
+    label: String!
+    food_group: FoodGroup!
+    diets: [Diet!]!
+}

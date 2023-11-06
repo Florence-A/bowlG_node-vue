@@ -1,0 +1,8 @@
+type Query {
+    diets: [Diet!]!
+    diet(id: Int!): Diet
+    foodgroups: [FoodGroup!]!
+    foodgroup(id: Int!): FoodGroup
+    ingredients: [Ingredient!]!
+    ingredients(id: Int!): Ingredient
+}
